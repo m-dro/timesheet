@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Update Project Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+
+<form action="#" th:action="@{/projects/update}" th:object="${project}" method="post">
+    <input type="hidden" th:field="*{id}">
+
+    <input type="text" th:field="*{name}" placeholder="Name"><br>
+    <input type="text" th:field="*{client}" placeholder="Client"><br>
+    <input type="text" th:field="*{characters}" placeholder="Characters"><br>
+    <input type="text" th:field="*{deadline}" placeholder="Deadline [DD.MM.YYYY]">
+    <button type="submit">Update</button>
+</form>
+<hr>
+
+<a th:href="@{/projects}">Back to Project List</a>
+
+</body>
+</html>

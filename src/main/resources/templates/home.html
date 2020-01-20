@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8">
+    <title>Timesheet App</title>
+        <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+</head>
+<body>
+
+<div>
+	<img th:src="@{/resources/static/logo.png}" alt="logo">
+</div>
+<div id="container" class="content">
+	<h1 >Welcome to Timesheet</h1>
+	<h3 >Your Favourite Project-Tracking App!</h3>
+	<br>
+	<div>
+	       
+	        <a th:href="@{/projects}" class="btn btn-light">Get Started! </a>
+	       
+	</div>
+</div>
+<footer th:replace="/fragments/footer.html" :: footer></footer>
+</body>
+</html>

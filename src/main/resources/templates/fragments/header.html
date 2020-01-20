@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8">
+        <title>Timesheet</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Reference Bootstrap files -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    
+    
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar=brand" href="/">
+				<i class="fas fa-list-ol"></i>
+				Timesheet
+			</a>
+			
+		</div>
+		<div id="welcome-msg" sec:authorize="isAuthenticated()">
+			<h4>Welcome back, 
+			<span sec:authentication="name"></span>
+			</h4>
+		</div>
+		<div class="nav">
+			<ul class="nav justify-content-end">
+				<li><a href="/" class="btn btn-outline-light">Homepage</a>
+				<li>
+					<form action="#" th:action="@{/logout}" method="POST">
+		    		<input type="submit" value="Logout" class="btn btn-outline-warning mt-2" />
+		
+		</form>
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+</body>
+</html>

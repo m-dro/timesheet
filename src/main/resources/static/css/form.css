@@ -1,0 +1,30 @@
+#loginbox {
+	margin: 25% auto;
+	width: 100px;
+	height: 100px;
+}
+
+
+.input-group {
+	margin-bottom: 25px;
+	padding: 5px;
+}
+
+.form-group {
+	margin-top: 10px;
+}
+
+#please-log-in {
+	padding-left: 20px;
+}
+
+#signin-button {
+	display: flex;
+  	justify-content: flex-end;
+  	padding-bottom: 10px;
+}
+
+#register-form {
+	display: flex;
+}
+

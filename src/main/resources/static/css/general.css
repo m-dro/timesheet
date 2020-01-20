@@ -1,0 +1,43 @@
+
+.content{
+    text-align: center; 
+    padding-top: 15%;
+    
+}
+
+#container{
+	width: 560px;
+	height: 400px;
+	margin: 0 auto;
+	
+}
+
+
+ .btnlight{
+  border:1px solid green;
+ }
+ 
+ .footer{
+ 	padding-bottom: 10%;
+ 	padding-top: 10%;
+ 	text-align: center;
+ }
+ 
+ #welcome-msg {
+ 	color: white;
+ }
+ 
+ #new-form {
+ 	width: 560px;
+	height: 400px;
+	margin: 100px auto;
+	border: 1px solid #007bff;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+ 	padding-top: 10%;
+ }
+
+ #back-button {
+	 margin: 0 10px;
+ }
